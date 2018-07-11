@@ -1,0 +1,171 @@
+* {
+  box-sizing: border-box;
+}
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Markazi Text', serif;
+}
+
+/* Menubar */
+
+#navbar {
+  height: 100%;
+  position: fixed;
+  width: 300px;
+  background-color: #edb874;
+}
+h1 {
+  font-size: 30px;
+  text-align: center;
+  cursor: default;
+  border-left: 5px solid #000;
+}
+.menu {
+  height: 100%;
+  padding: 0;
+  list-style: none;
+  font-size: 22px;
+  overflow: auto;
+}
+.nav-link {
+  display: block;
+  padding: 5px 8px;
+  text-decoration: none;
+  color: inherit;
+  border-left: 5px solid #edb874;
+}
+.nav-link:hover {
+  background-color: #ed7f57;
+  border-left: 5px solid #cc562c;
+}
+.m-a {
+  font-size: 19px;
+}
+.m-a a {
+  padding: 0 20px;
+}
+.m-a a:hover {
+  background-color: #ff9966;
+  border-left: 5px solid #e8683a;
+}
+
+#main-doc {
+  position: relative;
+  margin-left: 300px;
+  padding: 0 80px 0 40px;
+}
+.edges {
+  top: 0;
+  bottom: 0;
+}
+.main-section {
+}
+h2, h3 {
+  margin: 0;
+  padding-top: 28px;
+  font-family: 'Markazi Text', serif;
+}
+h2 {
+  font-size: 27px;
+  border-bottom: 3px solid #5aa1e2;
+}
+h3 {
+  font-size: 23px;
+}
+article {
+  font-family: 'Heebo', sans-serif;
+  font-size: 14px;
+  color: #333;
+  text-align: justify;
+}
+code {
+  background-color: #eee;
+  color: #000;
+}
+.example-code {
+  background-color: #ddd;
+  padding: 8px 16px;
+  border-left: 3px solid #999;
+  display: block;
+}
+.example {
+  font-family: 'Times New Roman', serif;
+}
+.wrong {
+  background-color: #ffdecf;
+  border-color: #ff5454;
+}
+.box {
+  background-color: #afd4f7;
+  border-left: 3px solid #5aa1e2;
+  padding: 8px 16px;
+  margin-top: 20px;
+  width: 70%;
+}
+.box p {
+  margin: 0;
+}
+.img {
+  max-width: 60%;
+}
+input:nth-child(1) {
+  margin-right: 5px;
+}
+table {
+  width: 100%;
+}
+th, td {
+  padding: 5px 10px;
+  border-bottom: 1px solid #a0bfdb;
+}
+th {
+  background-color: #c2dffb;
+}
+td {
+  background-color: #ddebf8;
+}
+
+@media screen and (max-width: 1024px) {
+  #main-doc {
+    padding: 0 40px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .wrapper {
+    height: 100vh;
+    overflow: hidden;
+  }
+  #navbar {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100vw;
+    height: 30vh;
+    overflow: hidden;
+  }
+  h1 {
+    margin: 5px 0;
+  }
+  .menu {
+    margin: 0;
+    overflow: auto;
+    height: 100%;
+  }
+  #main-doc {
+    position: relative;
+    width: 100vw;
+    height: 70vh;
+    margin: 0;
+    overflow: auto;
+    padding: 0 20px;
+    word-wrap: break-word;
+  }
+  .box {
+    width: 100%;
+  }
+  .img {
+    max-width: 100%;
+  }
+}
